@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import "./globals.css";
+import Navbar from "./components/Navbar/Navbar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,22 +18,7 @@ export default function RootLayout({
         {/* You can include additional head content here if needed */}
       </head>
       <body>
-        <nav>
-          <ul>
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/about">About</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contact</Link>
-            </li>
-            <li>
-              <Link href="/portfolios">Portfolios</Link>
-            </li>
-          </ul>
-        </nav>
+        <Navbar />
         <main>{children}</main>
         <footer>
           <p>&copy; 2024 My Photography Portfolio</p>
