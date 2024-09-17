@@ -1,0 +1,21 @@
+.navbar {
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.navItem a {
+  color: var(--white);
+  font-weight: bold;
+  font-size: var(--font-size-lg);
+}
+
+.navItem a:hover {
+  color: var(--primary-color);
+}
